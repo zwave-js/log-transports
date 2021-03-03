@@ -1,5 +1,6 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
 import { padStart } from "alcalzone-shared/strings";
+import * as logfmt from "logfmt";
 import Transport from "winston-transport";
 
 export class LogfmtTransport extends Transport {
@@ -10,28 +11,30 @@ export class LogfmtTransport extends Transport {
 	}
 
 	private logOnce(info: ZWaveLogInfo & { message: string; part?: string }) {
-		const dir =
-			info.direction === "  "
-				? ""
-				: info.direction === "« "
-				? "dir=RX"
-				: "dir=TX";
-		const tags = info.primaryTags ? `tags="${info.primaryTags}"` : "";
-		const tags2 = info.secondaryTags ? `info="${info.secondaryTags}"` : "";
-		const part = info.part ? `part=${info.part}` : "";
-		const msg = [
-			`ts=${info.timestamp}`,
-			`lbl=${info.label}`,
-			`lvl=${info.level}`,
-			dir,
-			tags,
-			!!info.message ? `msg="${info.message.replace(/"/g, "'")}"` : "",
-			tags2,
-			part,
-		]
-			.filter((blob) => !!blob)
-			.join(" ");
-		console.log(msg);
+		const msg: Record<string, string> = {
+			ts: info.timestamp!,
+			lbl: info.label!,
+			lvl: info.level!,
+			dir:
+				info.direction === "  "
+					? ""
+					: info.direction === "« "
+					? "dir=RX"
+					: "dir=TX",
+		};
+		if (info.primaryTags) {
+			msg.tags = info.primaryTags;
+		}
+		if (info.message) {
+			msg.msg = info.message;
+		}
+		if (info.secondaryTags) {
+			msg.info = info.secondaryTags;
+		}
+		if (info.part) {
+			msg.part = info.part;
+		}
+		logfmt.log(msg);
 	}
 
 	public log(info: ZWaveLogInfo, next: () => void): any {
