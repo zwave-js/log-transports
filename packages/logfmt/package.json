@@ -1,0 +1,51 @@
+{
+  "name": "@zwave-js/log-transport-logfmt",
+  "version": "1.0.0-alpha.0",
+  "description": "logfmt transport for Z-Wave JS",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*.{js,d.ts,map}"
+  ],
+  "author": {
+    "name": "AlCalzone",
+    "email": "d.griesel@gmx.net"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/zwave-js/log-transports#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwave-js/log-transports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zwave-js/log-transports/issues"
+  },
+  "funding": {
+    "url": "https://github.com/sponsors/AlCalzone/"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "alcalzone-shared": "^3.0.2"
+  },
+  "devDependencies": {
+    "@zwave-js/core": "~6.6.0",
+    "winston": "^3.3.3",
+    "winston-transport": "^4.4.0"
+  },
+  "peerDependencies": {
+    "@zwave-js/core": "~6.6.0",
+    "winston": "^3.3.3",
+    "winston-transport": "^4.4.0"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "yarn run build -- --clean",
+    "watch": "yarn run build -- --watch --pretty"
+  }
+}
