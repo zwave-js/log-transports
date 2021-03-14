@@ -24,7 +24,7 @@
    ```diff
       moduleNameMapper: {
         "^@zwave-js/log-transport-logfmt(.*)": "<rootDir>/packages/logfmt/src$1",
-   +    "^@zwave-js/log-transport-mysupercoolservice(.*)": "<rootDir>/packages/  mysupercoolservice/src$1",
+   +    "^@zwave-js/log-transport-mysupercoolservice(.*)": "<rootDir>/packages/mysupercoolservice/src$1",
       },
    ```
 4. (optional) Add dependencies for your new transport module **locally**:

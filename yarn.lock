@@ -2537,10 +2537,10 @@
     mkdirp-promise "^5.0.1"
     mz "^2.5.0"
 
-"@zwave-js/core@~6.6.0":
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/@zwave-js/core/-/core-6.6.0.tgz#c2aba3a1c1e20e5e3750223b229d783f5f027fe8"
-  integrity sha512-VAouAeENKFqxXk9Hh3V9OCwUzJTGhwmLSezWhtjKsBEQQ0+CY4RLUz2lj899WdEuSWL8wKt9ZlVA3RgVn2O3/A==
+"@zwave-js/core@~7.0.0-beta.0":
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@zwave-js/core/-/core-7.0.0-beta.0.tgz#4286ee6badfc3b03640e720af49009fb94edf8aa"
+  integrity sha512-HDIHTwxK0KkRUbn+7UupAISQkCV7H4ZxVVNP7oy6wzdenfpkFgbILlIWSVY1ktJyQymqqxWI5TN/vv7iOVM7/A==
   dependencies:
     "@alcalzone/jsonl-db" "^1.2.4"
     "@zwave-js/shared" "^6.5.0"

@@ -95,7 +95,8 @@ jobs:
       run: yarn run build
 
     - name: Run component tests
-      run: yarn run test:ci
+      # Allow zero tests for now until we have some
+      run: yarn run test:ci --passWithNoTests
       env:
         CI: true
 
