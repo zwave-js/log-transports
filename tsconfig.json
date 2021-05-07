@@ -1,35 +1,30 @@
 {
+	// To update the compilation target, install a different version of @tsconfig/node... and reference it here
+	// https://github.com/tsconfig/bases#node-10-tsconfigjson
+	"extends": "@tsconfig/node10/tsconfig.json",
 	"compilerOptions": {
+		// Required for monorepos, but don't compile anything broken
 		"composite": true,
 		"declaration": true,
 		"declarationMap": true,
-		// To enable Babel support
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"module": "commonjs",
-		"moduleResolution": "node",
 		"noEmitOnError": true,
-		"noImplicitAny": true,
-		"noImplicitThis": true,
+
+		// Control what goes into the output files
 		"removeComments": false,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": false,
+		"stripInternal": true,
+
+		// Avoid runtime imports that are unnecessary
 		"importsNotUsedAsValues": "error",
+
+		// Required for TS debugging
 		"sourceMap": true,
 		"inlineSourceMap": false,
-		"stripInternal": true,
-		"target": "es2018",
-		"skipLibCheck": true,
-		"strictNullChecks": true,
-		"strictPropertyInitialization": true,
-		"strictBindCallApply": true,
-		"strictFunctionTypes": true,
-		"watch": false, // true breaks CI scripts
+
+		// watch=true breaks CI build steps
+		"watch": false,
+		
 		"pretty": true,
-		"types": [
-			"node",
-			"jest-extended"
-		],
+		"types": ["node"],
 		"noErrorTruncation": true
 	},
 	"include": [

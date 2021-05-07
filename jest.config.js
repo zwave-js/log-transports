@@ -8,7 +8,7 @@ module.exports = {
 	moduleNameMapper: {
 		"^@zwave-js/log-transport-logfmt(.*)": "<rootDir>/packages/logfmt/src$1",
 	},
-	setupFilesAfterEnv: ["jest-extended"],
+	// setupFilesAfterEnv: ["jest-extended"],
 	setupFiles: ["./test/jest.setup.js"],
 	collectCoverage: false,
 	collectCoverageFrom: [
@@ -17,6 +17,6 @@ module.exports = {
 	],
 	coverageReporters: ["lcov", "html", "text-summary"],
 	transform: {
-		"^.+\\.tsx?$": "babel-jest",
+		"^.+\\.tsx?$": "esbuild-jest",
 	},
 };
