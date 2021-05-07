@@ -35,18 +35,18 @@
     
   },
   "devDependencies": {
-    "@zwave-js/core": "~6.6.0",
+    "@zwave-js/core": "~7.3.0",
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0"
   },
   "peerDependencies": {
-    "@zwave-js/core": "~6.6.0",
+    "@zwave-js/core": "~7.3.0",
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0"
   },
   "scripts": {
     "build": "tsc -b tsconfig.build.json",
-    "clean": "yarn run build -- --clean",
-    "watch": "yarn run build -- --watch --pretty"
+    "clean": "yarn run build --clean",
+    "watch": "yarn run build --watch --pretty"
   }
 }

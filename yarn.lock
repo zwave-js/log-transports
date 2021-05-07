@@ -2685,26 +2685,26 @@
     "@typescript-eslint/types" "4.22.1"
     eslint-visitor-keys "^2.0.0"
 
-"@zwave-js/core@~7.0.0-beta.0":
-  version "7.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@zwave-js/core/-/core-7.0.0-beta.0.tgz#4286ee6badfc3b03640e720af49009fb94edf8aa"
-  integrity sha512-HDIHTwxK0KkRUbn+7UupAISQkCV7H4ZxVVNP7oy6wzdenfpkFgbILlIWSVY1ktJyQymqqxWI5TN/vv7iOVM7/A==
+"@zwave-js/core@~7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@zwave-js/core/-/core-7.3.0.tgz#c7e4676d787c104e152a8c15f28f4427575b9ed5"
+  integrity sha512-ZcxqgNNvMwmXZZ1sBgBh+SX57K7EJBFsDKPfmOP2Tz3LuyfGIEnmZiWlqD+47yjwvuJbDSL/JfgUyIRtyD2FhQ==
   dependencies:
     "@alcalzone/jsonl-db" "^1.2.4"
-    "@zwave-js/shared" "^6.5.0"
-    alcalzone-shared "^3.0.2"
+    "@zwave-js/shared" "7.3.0"
+    alcalzone-shared "^3.0.3"
     ansi-colors "^4.1.1"
     moment "^2.29.0"
     moment-timezone "^0.5.33"
     nrf-intel-hex "^1.3.0"
     winston "^3.3.3"
 
-"@zwave-js/shared@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@zwave-js/shared/-/shared-6.5.0.tgz#e238950f883ae98b67e337c613262afe4de98e10"
-  integrity sha512-1Ht/QXKL/WoqISqbVKlPLnmpMEQQG4Tdzf8jLjzW152NglJg7+4IY9uSTkECgGvPyUxTU/YFyniNbZ6ndvklAg==
+"@zwave-js/shared@7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@zwave-js/shared/-/shared-7.3.0.tgz#4d1bf884bbaa6e10f9f357bbf86a759325b21ea4"
+  integrity sha512-0DADiZFr59Ij5dKaHA38x8bwRGGSF56IYncDYMqA8Ek8ftIX0K5AVpAZzSZvnJDanRIhIbbAftkmb9U42BeBcg==
   dependencies:
-    alcalzone-shared "^3.0.2"
+    alcalzone-shared "^3.0.3"
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -2803,7 +2803,7 @@ alcalzone-shared@^3.0.2:
   dependencies:
     debug "^4.3.1"
 
-alcalzone-shared@^3.0.3:
+alcalzone-shared@^3.0.3, alcalzone-shared@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/alcalzone-shared/-/alcalzone-shared-3.0.4.tgz#0438990e0793bf664fdffd82e88f4ece81db1bf0"
   integrity sha512-QVnZWWRLVV0NGbR+AszgR3Y/BpPjGKgAyoiKuNegtYbLVTadbFbKLfYQd+4YYkB9PSaj+Qc5Z81U6UtQwzGeQA==
