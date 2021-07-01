@@ -27,7 +27,7 @@
     "@alcalzone/release-script": "^1.10.0",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.4",
-    "@tsconfig/node10": "^1.0.7",
+    "@tsconfig/node10": "^1.0.8",
     "@types/jest": "^26.0.23",
     "@types/logfmt": "^1.2.1",
     "@types/node": "^15.12.5",
