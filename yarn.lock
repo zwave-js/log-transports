@@ -2061,6 +2061,13 @@ alcalzone-shared@^3.0.3, alcalzone-shared@^3.0.4:
   dependencies:
     debug "^4.3.1"
 
+alcalzone-shared@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/alcalzone-shared/-/alcalzone-shared-4.0.0.tgz#7e0a0ad947b8ada966a76321bbedede24fe6c97b"
+  integrity sha512-UJ/8eEd4sZwjmMpV4PahmDS5U05UdqWPYJxT+a8xNOTqnNn4vgbuyFMNX1kSx2KKiwX3yJi5QkISS3kY7pXWfQ==
+  dependencies:
+    debug "^4.3.1"
+
 ansi-colors@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
