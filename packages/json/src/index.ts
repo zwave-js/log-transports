@@ -8,6 +8,7 @@ export interface transportOptions {
 
 export class JSONTransport extends Transport {
 	passThroughStream: NodeStream.PassThrough;
+	formattedMessageSymbol = Symbol.for("message");
 	public constructor(options: transportOptions) {
 		super({
 			level: options.level || "silly",
