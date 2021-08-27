@@ -1,6 +1,6 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
 import Transport from "winston-transport";
-import { PassThrough } from "stream";
+import * as NodeStream from "stream";
 
 export interface transportOptions {
 	level?: string;
@@ -8,12 +8,12 @@ export interface transportOptions {
 
 export class JSONTransport extends Transport {
 
-	passThroughStream: PassThrough
+	passThroughStream: NodeStream.PassThrough
 	public constructor(options: transportOptions) {
 		super({
 			level: options.level || "silly",
 		});
-		this.passThroughStream = new PassThrough();
+		this.passThroughStream = new NodeStream.PassThrough();
 	}
 	public log(info: ZWaveLogInfo, next: () => void): any {
 		const logObject = JSON.stringify(info);
@@ -22,7 +22,7 @@ export class JSONTransport extends Transport {
 	}
 
 	// Obtains the JSON transport stream.
-	public getStream(): PassThrough{
+	public getStream(): NodeStream.PassThrough{
 		return this.passThroughStream;
 	}
 
