@@ -1,24 +1,34 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
 import Transport from "winston-transport";
+import PassThrough from "stream";
 
-export type callback = (info: Record<string, unknown>) => void;
 export interface transportOptions {
 	level?: string;
-	logCallback: callback;
 }
 
 export class JSONTransport extends Transport {
-	logCallback: callback;
+
+	passThroughStream: PassThrough
 	public constructor(options: transportOptions) {
 		super({
 			level: options.level || "silly",
 		});
-		this.logCallback = options.logCallback;
+		this.passThroughStream = new PassThrough();
+	}
+	public log(info: ZWaveLogInfo, next: () => void): any {
+		const logObject = JSON.stringify(info);
+		this.passThroughStream.write(logObject);
+		next();
 	}
 
-	public log(info: ZWaveLogInfo, next: () => void): any {
-		const logObject = JSON.parse(JSON.stringify(info));
-		this.logCallback(logObject);
-		next();
+	// Obtains the JSON transport stream.
+	public getStream(): PassThrough{
+		return this.passThroughStream;
+	}
+
+	// Destroys the JSON stream and releases any resources used.
+	public destroy(): void{
+		this.passThroughStream.end();
+		this.passThroughStream.destroy();
 	}
 }
