@@ -9,9 +9,9 @@ export interface transportOptions {
 
 export class JSONTransport extends Transport {
 	logCallback: callback;
-	public constructor(options:transportOptions) {
+	public constructor(options: transportOptions) {
 		super({
-			level: options.level || "silly"
+			level: options.level || "silly",
 		});
 		this.logCallback = options.logCallback;
 	}
