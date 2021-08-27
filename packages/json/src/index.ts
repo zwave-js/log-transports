@@ -1,6 +1,6 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
 import Transport from "winston-transport";
-import PassThrough from "stream";
+import { PassThrough } from "stream";
 
 export interface transportOptions {
 	level?: string;
