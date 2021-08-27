@@ -1,7 +1,7 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
 import Transport from "winston-transport";
 
-export type callback = (info: object) => void;
+export type callback = (info: Record<string, unknown>) => void;
 export interface transportOptions {
 	level?: string;
 	logCallback: callback;
