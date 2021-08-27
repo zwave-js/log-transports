@@ -1,7 +1,7 @@
 {
   "name": "@zwave-js/log-transport-json",
   "version": "1.0.0-alpha.0",
-  "description": "logfmt transport for Z-Wave JS",
+  "description": "JSON transport for Z-Wave JS",
   "publishConfig": {
     "access": "public"
   },
