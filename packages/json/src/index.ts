@@ -15,7 +15,7 @@ export class JSONTransport extends Transport {
 		this.passThroughStream = new NodeStream.PassThrough();
 	}
 	public log(info: ZWaveLogInfo, next: () => void): any {
-		const logObject = JSON.stringify(info);
+		const logObject = JSON.stringify({...info, formattedMessage: info[Symbol.for("message")]});
 		this.passThroughStream.write(logObject);
 		next();
 	}
