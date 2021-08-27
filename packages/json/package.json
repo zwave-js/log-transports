@@ -1,0 +1,50 @@
+{
+  "name": "@zwave-js/log-transport-json",
+  "version": "1.0.0-alpha.0",
+  "description": "logfmt transport for Z-Wave JS",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*.{js,d.ts,map}"
+  ],
+  "author": {
+    "name": "Marcus Davies",
+    "email": "marcus.davies83@icloud.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/zwave-js/log-transports#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwave-js/log-transports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zwave-js/log-transports/issues"
+  },
+  "funding": {
+    "url": "https://github.com/sponsors/AlCalzone/"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@zwave-js/core": "~7.7.1",
+    "winston": "^3.3.3",
+    "winston-transport": "^4.4.0"
+  },
+  "peerDependencies": {
+    "@zwave-js/core": "~7.7.1",
+    "winston": "^3.3.3",
+    "winston-transport": "^4.4.0"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "yarn run build --clean",
+    "watch": "yarn run build --watch --pretty"
+  }
+}
