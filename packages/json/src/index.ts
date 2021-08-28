@@ -2,37 +2,40 @@ import type { ZWaveLogInfo } from "@zwave-js/core";
 import * as NodeStream from "stream";
 import Transport from "winston-transport";
 
-export interface transportOptions {
-	level?: string;
-}
+const formattedMessageSymbol = Symbol.for("message");
 
 export class JSONTransport extends Transport {
-	passThroughStream: NodeStream.PassThrough;
-	formattedMessageSymbol = Symbol.for("message");
-	public constructor(options: transportOptions) {
+	_passThroughStream: NodeStream.PassThrough;
+
+	public constructor() {
 		super({
-			level: options.level || "silly",
+			level: "silly",
 		});
-		this.passThroughStream = new NodeStream.PassThrough();
+		this._passThroughStream = new NodeStream.PassThrough();
 	}
 	public log(info: ZWaveLogInfo, next: () => void): any {
 		const logObject = JSON.stringify({
 			...info,
-			formattedMessage: info[this.formattedMessageSymbol as any],
+			formattedMessage: info[formattedMessageSymbol as any],
 		});
-		//const logObject = JSON.stringify(info);
-		this.passThroughStream.write(logObject);
+
+		this._passThroughStream.write(logObject);
 		next();
 	}
 
 	// Obtains the JSON transport stream.
 	public getStream(): NodeStream.PassThrough {
-		return this.passThroughStream;
+		return this._passThroughStream;
 	}
 
-	// Destroys the JSON stream and releases any resources used.
-	public destroy(): void {
-		this.passThroughStream.end();
-		this.passThroughStream.destroy();
+	// Closes the stream associated with this instance.
+	public close(cb?: () => void): void {
+		if (!this._passThroughStream) {
+			return;
+		}
+		this._passThroughStream.end();
+		if (cb) {
+			cb();
+		}
 	}
 }
