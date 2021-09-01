@@ -1,9 +1,7 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
-import { pick } from "@zwave-js/shared";
 import { PassThrough } from "stream";
+import { LEVEL, MESSAGE } from "triple-beam";
 import Transport from "winston-transport";
-
-const formattedMessageSymbol = Symbol.for("message");
 
 export class JSONTransport extends Transport {
 	public constructor() {
@@ -14,17 +12,18 @@ export class JSONTransport extends Transport {
 	}
 
 	public log(info: ZWaveLogInfo, next: () => void): any {
-		const logObject = pick(info, [
-			"timestamp",
-			"level",
-			"label",
-			"primaryTags",
-			"secondaryTags",
-			"message",
-			"direction",
-		]);
-		if (formattedMessageSymbol in info) {
-			logObject.message = info[formattedMessageSymbol as any];
+		const {
+			// remove these properties from the result object
+			multiline,
+			secondaryTagPadding,
+			[LEVEL as any]: _,
+			// keep the formatted message if it exists
+			[MESSAGE as any]: formattedMessage,
+			// And keep the rest
+			...logObject
+		} = info;
+		if (!!formattedMessage) {
+			logObject.message = formattedMessage;
 		}
 
 		this._stream.write(logObject);
