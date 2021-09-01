@@ -1,41 +1,36 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
-import * as NodeStream from "stream";
+import { PassThrough } from "stream";
 import Transport from "winston-transport";
 
 const formattedMessageSymbol = Symbol.for("message");
 
 export class JSONTransport extends Transport {
-	_passThroughStream: NodeStream.PassThrough;
-
 	public constructor() {
-		super({
-			level: "silly",
+		super({ level: "silly" });
+		this._stream = new PassThrough({
+			objectMode: true,
 		});
-		this._passThroughStream = new NodeStream.PassThrough();
 	}
+
 	public log(info: ZWaveLogInfo, next: () => void): any {
-		const logObject = JSON.stringify({
+		console.warn(
+			`formatted message exists: ${formattedMessageSymbol in info}`,
+		);
+		const logObject = {
 			...info,
 			formattedMessage: info[formattedMessageSymbol as any],
-		});
+		};
 
-		this._passThroughStream.write(logObject);
+		this._stream.write(logObject);
 		next();
 	}
 
-	// Obtains the JSON transport stream.
-	public getStream(): NodeStream.PassThrough {
-		return this._passThroughStream;
+	private _stream: PassThrough;
+	public get stream(): PassThrough {
+		return this._stream;
 	}
 
-	// Closes the stream associated with this instance.
-	public close(cb?: () => void): void {
-		if (!this._passThroughStream) {
-			return;
-		}
-		this._passThroughStream.end();
-		if (cb) {
-			cb();
-		}
+	public close(): void {
+		this._stream?.end();
 	}
 }

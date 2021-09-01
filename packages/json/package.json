@@ -33,13 +33,13 @@
   "dependencies": {
   },
   "devDependencies": {
-    "@zwave-js/core": "~7.7.1",
+    "@zwave-js/core": ">=7.7.1",
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0",
-    "@types/node":"12.20.21"
+    "@types/node":">=12.20.21"
   },
   "peerDependencies": {
-    "@zwave-js/core": "~7.7.1",
+    "@zwave-js/core": ">=7.7.1",
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0"
   },
