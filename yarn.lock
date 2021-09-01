@@ -1971,7 +1971,7 @@
   dependencies:
     moment "^2.11.2"
 
-"@zwave-js/shared@8.1.0":
+"@zwave-js/shared@8.1.0", "@zwave-js/shared@>=7.7.1":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@zwave-js/shared/-/shared-8.1.0.tgz#64699ae36a08745639acb29b3799316fa0fbda64"
   integrity sha512-vu9hMG3aih1pkGx4VWDJy4eRiLXFCo6nyt59Rqhan7KEh/AgLF3C/pmV13VnaalcHPKsY1Yt5ARAjFNYchQZkA==

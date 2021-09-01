@@ -1,4 +1,5 @@
 import type { ZWaveLogInfo } from "@zwave-js/core";
+import { pick } from "@zwave-js/shared";
 import { PassThrough } from "stream";
 import Transport from "winston-transport";
 
@@ -13,13 +14,18 @@ export class JSONTransport extends Transport {
 	}
 
 	public log(info: ZWaveLogInfo, next: () => void): any {
-		console.warn(
-			`formatted message exists: ${formattedMessageSymbol in info}`,
-		);
-		const logObject = {
-			...info,
-			formattedMessage: info[formattedMessageSymbol as any],
-		};
+		const logObject = pick(info, [
+			"timestamp",
+			"level",
+			"label",
+			"primaryTags",
+			"secondaryTags",
+			"message",
+			"direction",
+		]);
+		if (formattedMessageSymbol in info) {
+			logObject.message = info[formattedMessageSymbol as any];
+		}
 
 		this._stream.write(logObject);
 		next();
