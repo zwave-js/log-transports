@@ -17,9 +17,7 @@
 			"ignoreChanges": [
 				"*.md"
 			],
-			"exact": true,
-			"amend": true,
-			"push": false
+			"exact": true
 		}
 	}
 }

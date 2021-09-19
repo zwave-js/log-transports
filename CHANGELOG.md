@@ -4,4 +4,4 @@
 	## __WORK IN PROGRESS__
 -->
 ## __WORK IN PROGRESS__
-Nothing right now
+Implemented JSON transport
