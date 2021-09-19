@@ -1,13 +1,14 @@
 module.exports = {
 	testEnvironment: "node",
 	roots: [
+		"<rootDir>/packages/json/src",
 		"<rootDir>/packages/logfmt/src",
 	],
 	testRegex: "(\\.|/)test\\.tsx?$",
 	moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
 	moduleNameMapper: {
-		"^@zwave-js/log-transport-logfmt(.*)": "<rootDir>/packages/logfmt/src$1",
 		"^@zwave-js/log-transport-json(.*)": "<rootDir>/packages/json/src$1",
+		"^@zwave-js/log-transport-logfmt(.*)": "<rootDir>/packages/logfmt/src$1",
 	},
 	// setupFilesAfterEnv: ["jest-extended"],
 	setupFiles: ["./test/jest.setup.js"],
