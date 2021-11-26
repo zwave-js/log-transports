@@ -5,6 +5,7 @@
 ## Available transports:
 
 -   [logfmt](packages/logfmt/README.md)
+-   [json](packages/json)
 
 ## Implementing new transports
 
