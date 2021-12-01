@@ -2343,12 +2343,12 @@ alcalzone-shared@^3.0.4:
   dependencies:
     debug "^4.3.1"
 
-alcalzone-shared@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/alcalzone-shared/-/alcalzone-shared-4.0.0.tgz#7e0a0ad947b8ada966a76321bbedede24fe6c97b"
-  integrity sha512-UJ/8eEd4sZwjmMpV4PahmDS5U05UdqWPYJxT+a8xNOTqnNn4vgbuyFMNX1kSx2KKiwX3yJi5QkISS3kY7pXWfQ==
+alcalzone-shared@^4.0.0, alcalzone-shared@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/alcalzone-shared/-/alcalzone-shared-4.0.1.tgz#1fcfb042f104a29cc8e67b0b07cb9e459ac2f9bc"
+  integrity sha512-6t0LFCIGvBG24grbV93Y1+MJjoyqgUpPOp/PkOcal1ZXXUUMEaZKPu6NfN6e3x5k2P2mnNaY2eXn/VmpWDLzYA==
   dependencies:
-    debug "^4.3.1"
+    debug "^4.3.2"
 
 ansi-colors@^4.1.1:
   version "4.1.1"
@@ -3323,10 +3323,10 @@ dayjs@^1.10.6:
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
   integrity sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==
 
-debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
-  integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
+debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
+  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
   dependencies:
     ms "2.1.2"
 
