@@ -2226,10 +2226,10 @@
     alcalzone-shared "^4.0.0"
     fs-extra "^10.0.0"
 
-"@zwave-js/shared@>=8.8.0":
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/@zwave-js/shared/-/shared-8.8.0.tgz#11d16815beac0e96487b85aeee5df0fd2cff0ff8"
-  integrity sha512-fx8wu508/+XX2IJmNn6tZgnRwL0nu4x5CB8damwGKfPjeC0d7C+yRuL3PkamIDMy94BscEweoBNV0YK4ycUkcQ==
+"@zwave-js/shared@>=8.9.0":
+  version "8.9.0"
+  resolved "https://registry.yarnpkg.com/@zwave-js/shared/-/shared-8.9.0.tgz#bfd80a98b829923495e15ce180b261783fa7102c"
+  integrity sha512-7Q3cfpRHb0CQ5O632ScI8b3DvlnoV451wbEU5MaDbRUsJLK4mJwCBfGEbOF59itH0nfuPzPvkeI7Fwefqu65aQ==
   dependencies:
     alcalzone-shared "^4.0.1"
     fs-extra "^10.0.0"
