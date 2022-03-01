@@ -65,12 +65,12 @@
   dependencies:
     "@alcalzone/release-script-core" "3.4.1"
 
-"@alcalzone/release-script-plugin-license@3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@alcalzone/release-script-plugin-license/-/release-script-plugin-license-3.4.1.tgz#66a4cf18b8d911fa4bb94fa181d359a34063f034"
-  integrity sha512-e5E/BLH8Jrjk7SSR08BvK+t+Y5acY4zBy5Li3/kLt3eYA/md8mXoOu83KHbWVxHzXvQEnpAPdkIeKSMmqf9gqg==
+"@alcalzone/release-script-plugin-license@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@alcalzone/release-script-plugin-license/-/release-script-plugin-license-3.5.0.tgz#96559d67e02e4809c212cc9dc091a25f857c88c8"
+  integrity sha512-WfsIcNHXIwhMyxq0Mz27gvw4Q58Qs7mGzCDePpYKsYJNopojuFoY62cDitr7beYLqMTIWViAmVfZLIfq88LPFA==
   dependencies:
-    "@alcalzone/release-script-core" "3.4.1"
+    "@alcalzone/release-script-core" "3.5.0"
     fs-extra "^10.0.0"
     tiny-glob "^0.2.9"
 
