@@ -1,5 +1,6 @@
 {
   "name": "@zwave-js/log-transports",
+  "version": "2.0.0",
   "private": true,
   "description": "A collection of log transports for node-zwave-js",
   "keywords": [],
@@ -24,7 +25,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@alcalzone/release-script": "3.5.4",
+    "@alcalzone/release-script": "3.5.6",
     "@alcalzone/release-script-plugin-license": "3.5.3",
     "@tsconfig/node12": "^1.0.9",
     "@types/jest": "^27.4.1",
