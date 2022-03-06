@@ -35,14 +35,14 @@
     
   },
   "devDependencies": {
-    "@zwave-js/core": "~7.3.0",
-    "winston": "^3.3.3",
-    "winston-transport": "^4.4.0"
+    "@zwave-js/core": ">=9.0.0-beta.3",
+    "winston": "^3.6.0",
+    "winston-transport": "^4.5.0"
   },
   "peerDependencies": {
-    "@zwave-js/core": "~7.3.0",
-    "winston": "^3.3.3",
-    "winston-transport": "^4.4.0"
+    "@zwave-js/core": ">=9.0.0-beta.3",
+    "winston": "^3.6.0",
+    "winston-transport": "^4.5.0"
   },
   "scripts": {
     "build": "tsc -b tsconfig.build.json",
