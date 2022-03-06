@@ -14,5 +14,6 @@
 		"**/build": true,
 		"**/*.tsbuildinfo": true,
 		"**/*.map": true
-	}
+	},
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
