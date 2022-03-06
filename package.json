@@ -25,7 +25,6 @@
   ],
   "devDependencies": {
     "@alcalzone/release-script": "3.5.4",
-    "@alcalzone/release-script-plugin-lerna": "3.5.3",
     "@alcalzone/release-script-plugin-license": "3.5.3",
     "@tsconfig/node10": "^1.0.8",
     "@types/jest": "^27.4.1",
@@ -40,7 +39,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.5.1",
-    "lerna": "^4.0.0",
     "prettier": "^2.5.1",
     "prettier-plugin-organize-imports": "^2.3.4",
     "ts-node": "^10.7.0",

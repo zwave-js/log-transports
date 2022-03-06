@@ -24,31 +24,19 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-
-    - name: Get Yarn cache directory
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn cache dir)"
-
-    - name: Use Yarn cache
-      uses: actions/cache@v2
-      id: yarn-cache
-      with:
-        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
+        cache: 'yarn'
 
     - name: Install dependencies
-      run: yarn install --prefer-offline --frozen-lockfile
+      run: yarn install --immutable
 
-    - name: Compile TypeScript code
-      run: npx lerna run build
+    - name: Create a clean build
+      run: yarn run build
 
     - name: Run linters
       run: yarn run lint
@@ -67,28 +55,16 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-
-    - name: Get Yarn cache directory
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn cache dir)"
-
-    - name: Use Yarn cache
-      uses: actions/cache@v2
-      id: yarn-cache
-      with:
-        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
+        cache: 'yarn'
 
     - name: Install dependencies
-      run: yarn install --prefer-offline --frozen-lockfile
+      run: yarn install --immutable
 
     # Compilation is necessary, or the tests won't run
     - name: Compile TypeScript code
@@ -120,12 +96,13 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
 
     - name: Extract the version and commit body from the tag
       id: extract_release
@@ -139,31 +116,23 @@ jobs:
         BODY="${BODY//$'\n'/'%0A'}"
         BODY="${BODY//$'\r'/'%0D'}"
         echo "::set-output name=BODY::$BODY"
-
-    - name: Get Yarn cache directory
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn cache dir)"
-
-    - name: Use Yarn cache
-      uses: actions/cache@v2
-      id: yarn-cache
-      with:
-        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
+        if [[ $VERSION == *"-"* ]] ; then
+          echo "::set-output name=TAG::--tag next"
+        fi
 
     - name: Install dependencies
-      run: yarn install --prefer-offline --frozen-lockfile
+      run: yarn install --immutable
 
     - name: Create a clean build
       run: yarn run build
 
-    - name: Publish package to npm
+    - name: Publish packages to npm
+      env:
+        TAG: ${{ steps.extract_release.outputs.TAG }}
       run: |
-        npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-        npm whoami
-        npx lerna publish from-package --yes
+        yarn config set npmAuthToken "${{ secrets.NPM_TOKEN }}"
+        yarn npm whoami
+        yarn workspaces foreach -vti --no-private npm publish --tolerate-republish $TAG
 
     - name: Create Github Release
       uses: actions/create-release@v1
