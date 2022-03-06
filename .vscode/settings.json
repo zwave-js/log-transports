@@ -1,19 +1,19 @@
 {
 	"files.exclude": {
-		"**/node_modules/": true,
-		"packages/*/package-lock.json": true,
-		".yarn/*": true,
+		"**/node_modules/": false,
+		"packages/*/package-lock.json": false,
+		".yarn/*": false,
 		".yarn/cache": false,
 		".yarn/releases": false,
 		".yarn/plugins": false,
 		".yarn/sdks": false,
 		".yarn/versions": false,
-		"**/*.test.js": true,
-		".nyc_output": true,
-		"**/coverage/": true,
-		"**/build": true,
-		"**/*.tsbuildinfo": true,
-		"**/*.map": true
+		"**/*.test.js": false,
+		".nyc_output": false,
+		"**/coverage/": false,
+		"**/build": false,
+		"**/*.tsbuildinfo": false,
+		"**/*.map": false
 	},
 	"typescript.tsdk": "node_modules/typescript/lib"
 }
