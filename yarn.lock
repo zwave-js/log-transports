@@ -1170,14 +1170,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node10@npm:^1.0.7, @tsconfig/node10@npm:^1.0.8":
+"@tsconfig/node10@npm:^1.0.7":
   version: 1.0.8
   resolution: "@tsconfig/node10@npm:1.0.8"
   checksum: b8d5fffbc6b17ef64ef74f7fdbccee02a809a063ade785c3648dae59406bc207f70ea2c4296f92749b33019fa36a5ae716e42e49cc7f1bbf0fd147be0d6b970a
   languageName: node
   linkType: hard
 
-"@tsconfig/node12@npm:^1.0.7":
+"@tsconfig/node12@npm:^1.0.7, @tsconfig/node12@npm:^1.0.9":
   version: 1.0.9
   resolution: "@tsconfig/node12@npm:1.0.9"
   checksum: a01b2400ab3582b86b589c6d31dcd0c0656f333adecde85d6d7d4086adb059808b82692380bb169546d189bf771ae21d02544a75b57bd6da4a5dd95f8567bec9
@@ -1558,7 +1558,7 @@ __metadata:
   dependencies:
     "@alcalzone/release-script": 3.5.4
     "@alcalzone/release-script-plugin-license": 3.5.3
-    "@tsconfig/node10": ^1.0.8
+    "@tsconfig/node12": ^1.0.9
     "@types/jest": ^27.4.1
     "@types/logfmt": ^1.2.2
     "@types/node": ^16.11.6
