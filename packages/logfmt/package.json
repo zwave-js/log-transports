@@ -35,13 +35,13 @@
     "logfmt": "^1.3.2"
   },
   "devDependencies": {
-    "@zwave-js/core": ">=9.0.0-beta.3",
+    "@zwave-js/core": ">=9.0.0-beta.9",
     "typescript": "4.6.2",
     "winston": "^3.6.0",
     "winston-transport": "^4.5.0"
   },
   "peerDependencies": {
-    "@zwave-js/core": ">=9.0.0-beta.3",
+    "@zwave-js/core": ">=9.0.0-beta.9",
     "winston": "^3.6.0",
     "winston-transport": "^4.5.0"
   },
