@@ -3,7 +3,7 @@
 	Placeholder for next release:
 	## __WORK IN PROGRESS__
 -->
-## __WORK IN PROGRESS__
+## 2.0.1 (2022-04-28)
 Security update:
 * Raised the requirement for `@zwave-js/core` and `@zwave-js/shared` to `>=9.0.4`
 * Raised the requirement for `winston` to `^3.7.2`
