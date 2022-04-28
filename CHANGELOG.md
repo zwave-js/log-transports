@@ -3,6 +3,11 @@
 	Placeholder for next release:
 	## __WORK IN PROGRESS__
 -->
+## __WORK IN PROGRESS__
+Security update:
+* Raised the requirement for `@zwave-js/core` and `@zwave-js/shared` to `>=9.0.4`
+* Raised the requirement for `winston` to `^3.7.2`
+
 ## 2.0.0 (2022-03-06)
 * Upgraded dependencies
 * Dropped official support for Node.js 10
