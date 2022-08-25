@@ -1,6 +1,6 @@
 {
   "name": "@zwave-js/log-transports",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "private": true,
   "description": "A collection of log transports for node-zwave-js",
   "keywords": [],
