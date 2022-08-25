@@ -3,6 +3,9 @@
 	Placeholder for next release:
 	## __WORK IN PROGRESS__
 -->
+## 2.0.2 (2022-08-25)
+* Upgraded dependencies
+
 ## 2.0.1 (2022-04-28)
 Security update:
 * Raised the requirement for `@zwave-js/core` and `@zwave-js/shared` to `>=9.0.4`
