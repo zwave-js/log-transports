@@ -3,6 +3,10 @@
 	Placeholder for next release:
 	## __WORK IN PROGRESS__
 -->
+## __WORK IN PROGRESS__
+* The minimum required version of Node.js is now `14.13`
+* Raised the requirement for `@zwave-js/core` and `@zwave-js/shared` to `>=10.0.0`
+
 ## 2.0.2 (2022-08-25)
 * Upgraded dependencies
 
