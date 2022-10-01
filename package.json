@@ -30,7 +30,7 @@
     "@tsconfig/node12": "^1.0.11",
     "@types/jest": "^28.1.8",
     "@types/logfmt": "^1.2.2",
-    "@types/node": "^16.11.56",
+    "@types/node": "^18.7.23",
     "@types/triple-beam": "^1.3.2",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
     "@typescript-eslint/parser": "^5.35.1",
