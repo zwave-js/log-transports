@@ -1867,7 +1867,7 @@ __metadata:
   resolution: "@zwave-js/log-transport-logfmt@workspace:packages/logfmt"
   dependencies:
     "@zwave-js/core": ">=10.0.0"
-    alcalzone-shared: ^4.0.1
+    alcalzone-shared: ^4.0.8
     logfmt: ^1.3.2
     typescript: ~4.7.4
     winston: ^3.8.2
@@ -2004,6 +2004,15 @@ __metadata:
   dependencies:
     debug: ^4.3.2
   checksum: 1c0e05226ca4dd4c73ea5615d964f9db2f3d6b332e3883df381c289d8d8f0e6e9fbe6464ee3d3c00a0f2cb28018a480496d7b931355bf699a42ad085cde27a63
+  languageName: node
+  linkType: hard
+
+"alcalzone-shared@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "alcalzone-shared@npm:4.0.8"
+  dependencies:
+    debug: ^4.3.4
+  checksum: 8ab2bbcb6b1a06e1806001df5eed72438fa27544427fa5b324e23ecefe2e8a3cff6f78bb544fcf2e3028b2cf57d9f5103b3559bdd565005c0538b60adff071bc
   languageName: node
   linkType: hard
 
