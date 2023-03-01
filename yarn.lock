@@ -2071,13 +2071,13 @@ __metadata:
   dependencies:
     "@types/node": ^18.11.18
     "@zwave-js/core": ">=10.3.0"
-    "@zwave-js/shared": ">=10.6.0"
+    "@zwave-js/shared": ">=10.10.0"
     typescript: ~4.9.5
     winston: ^3.8.2
     winston-transport: ^4.5.0
   peerDependencies:
     "@zwave-js/core": ">=10.3.0"
-    "@zwave-js/shared": ">=10.6.0"
+    "@zwave-js/shared": ">=10.10.0"
     winston: ^3.7.2
     winston-transport: ^4.5.0
   languageName: unknown
@@ -2136,13 +2136,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zwave-js/shared@npm:>=10.6.0":
-  version: 10.6.0
-  resolution: "@zwave-js/shared@npm:10.6.0"
+"@zwave-js/shared@npm:>=10.10.0":
+  version: 10.10.0
+  resolution: "@zwave-js/shared@npm:10.10.0"
   dependencies:
     alcalzone-shared: ^4.0.8
     fs-extra: ^10.1.0
-  checksum: 88c4092c5f4f14db0d1fd5ffdb00c5bd2520187f5c0786bd9a7b82ef41a9e7cd1fb4173ccbcde4d287005b8510018611c045d1113f2af098e9c0db16d2b3ef01
+  checksum: b1efd4841e401bb805ce51f71a467c0a1e91d85952b95e03d53924459a80096be588c685b444e781c7c613d12d47224e93a7bf774f73a470795e80cc20a1465d
   languageName: node
   linkType: hard
 
