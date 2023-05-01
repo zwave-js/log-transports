@@ -5,14 +5,14 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@alcalzone/jsonl-db@npm:^2.5.3":
-  version: 2.5.3
-  resolution: "@alcalzone/jsonl-db@npm:2.5.3"
+"@alcalzone/jsonl-db@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@alcalzone/jsonl-db@npm:3.1.0"
   dependencies:
     "@alcalzone/proper-lockfile": ^4.1.3-0
-    alcalzone-shared: ^4.0.3
+    alcalzone-shared: ^4.0.8
     fs-extra: ^10.1.0
-  checksum: 7e9d798f2a720772e7273a506274e513de95d80ac3eee458ce02b170deba1ba68bfe09ba2b969f566abe883e20c9a7ec0483e0d96b08768fc3f2e800290dab4c
+  checksum: 7ca8b6ba7ba92abc59e2ef6affecaeeb0797d20756904f08e906882e15173b6a2c975fc170355ac9b2ac57c07fd1e37a09c70c4a1a1c35249ab51b425514a04d
   languageName: node
   linkType: hard
 
@@ -2026,12 +2026,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zwave-js/core@npm:>=10.10.0":
-  version: 10.10.0
-  resolution: "@zwave-js/core@npm:10.10.0"
+"@zwave-js/core@npm:>=10.16.0":
+  version: 10.16.0
+  resolution: "@zwave-js/core@npm:10.16.0"
   dependencies:
-    "@alcalzone/jsonl-db": ^2.5.3
-    "@zwave-js/shared": 10.10.0
+    "@alcalzone/jsonl-db": ^3.1.0
+    "@zwave-js/shared": 10.16.0
     alcalzone-shared: ^4.0.8
     ansi-colors: ^4.1.3
     dayjs: ^1.11.5
@@ -2042,7 +2042,7 @@ __metadata:
     winston: ^3.8.2
     winston-daily-rotate-file: ^4.7.1
     winston-transport: ^4.5.0
-  checksum: d6b32a7c46d21504b9b8cb79875d59bce728a9f093efa56106faeb0c91fd676e480162cb028428ed11b74b79594559268df498442bb19017de433f078fe8e6fa
+  checksum: cdd0e3e4561a20bfbb7e11ba421b7ac32fb91481bce4904d0eca711e02f61bc14225e9b1665e7c381101cfc81fedf53a9aa64087cf0d0c6a298f80938be336fb
   languageName: node
   linkType: hard
 
@@ -2051,13 +2051,13 @@ __metadata:
   resolution: "@zwave-js/log-transport-json@workspace:packages/json"
   dependencies:
     "@types/node": ^18.15.11
-    "@zwave-js/core": ">=10.10.0"
+    "@zwave-js/core": ">=10.16.0"
     "@zwave-js/shared": ">=10.11.1"
     typescript: ~4.9.5
     winston: ^3.8.2
     winston-transport: ^4.5.0
   peerDependencies:
-    "@zwave-js/core": ">=10.10.0"
+    "@zwave-js/core": ">=10.16.0"
     "@zwave-js/shared": ">=10.11.1"
     winston: ^3.7.2
     winston-transport: ^4.5.0
@@ -2068,14 +2068,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zwave-js/log-transport-logfmt@workspace:packages/logfmt"
   dependencies:
-    "@zwave-js/core": ">=10.10.0"
+    "@zwave-js/core": ">=10.16.0"
     alcalzone-shared: ^4.0.8
     logfmt: ^1.3.2
     typescript: ~4.9.5
     winston: ^3.8.2
     winston-transport: ^4.5.0
   peerDependencies:
-    "@zwave-js/core": ">=10.10.0"
+    "@zwave-js/core": ">=10.16.0"
     winston: ^3.7.2
     winston-transport: ^4.5.0
   languageName: unknown
@@ -2107,13 +2107,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zwave-js/shared@npm:10.10.0":
-  version: 10.10.0
-  resolution: "@zwave-js/shared@npm:10.10.0"
+"@zwave-js/shared@npm:10.16.0":
+  version: 10.16.0
+  resolution: "@zwave-js/shared@npm:10.16.0"
   dependencies:
     alcalzone-shared: ^4.0.8
     fs-extra: ^10.1.0
-  checksum: b1efd4841e401bb805ce51f71a467c0a1e91d85952b95e03d53924459a80096be588c685b444e781c7c613d12d47224e93a7bf774f73a470795e80cc20a1465d
+  checksum: 0e21a78a7c2e2fb60f0580b25c26e5af136e47ef2371c6d4d23c0e16ae7b7a90503c4a63eef5c19df0b1f8b413f4a37c9a7cde51ba17e4f6f166c080783011b2
   languageName: node
   linkType: hard
 
@@ -2219,7 +2219,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"alcalzone-shared@npm:^4.0.3, alcalzone-shared@npm:^4.0.8":
+"alcalzone-shared@npm:^4.0.8":
   version: 4.0.8
   resolution: "alcalzone-shared@npm:4.0.8"
   dependencies:
