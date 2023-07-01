@@ -34,7 +34,7 @@
     "@types/node": "^18.15.11",
     "@zwave-js/core": ">=10.16.0",
     "@zwave-js/shared": ">=10.22.3",
-    "typescript": "~4.9.5",
+    "typescript": "~5.1.6",
     "winston": "^3.9.0",
     "winston-transport": "^4.5.0"
   },
