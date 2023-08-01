@@ -2033,23 +2033,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zwave-js/core@npm:>=10.16.0":
-  version: 10.16.0
-  resolution: "@zwave-js/core@npm:10.16.0"
+"@zwave-js/core@npm:>=11.8.0":
+  version: 11.8.0
+  resolution: "@zwave-js/core@npm:11.8.0"
   dependencies:
     "@alcalzone/jsonl-db": ^3.1.0
-    "@zwave-js/shared": 10.16.0
+    "@zwave-js/shared": 11.8.0
     alcalzone-shared: ^4.0.8
     ansi-colors: ^4.1.3
-    dayjs: ^1.11.5
-    logform: ^2.4.2
+    dayjs: ^1.11.7
+    logform: ^2.5.1
     nrf-intel-hex: ^1.3.0
     reflect-metadata: ^0.1.13
     triple-beam: "*"
     winston: ^3.8.2
     winston-daily-rotate-file: ^4.7.1
     winston-transport: ^4.5.0
-  checksum: cdd0e3e4561a20bfbb7e11ba421b7ac32fb91481bce4904d0eca711e02f61bc14225e9b1665e7c381101cfc81fedf53a9aa64087cf0d0c6a298f80938be336fb
+  checksum: 344db8fab45fc58c89ad3c8ada2736d2671bd50a7e79ba6d474d97d9d69799822bb0c073008da5658089f9f90ce838e53e43c1db30dfae9bd2865ed06e87c609
   languageName: node
   linkType: hard
 
@@ -2058,13 +2058,13 @@ __metadata:
   resolution: "@zwave-js/log-transport-json@workspace:packages/json"
   dependencies:
     "@types/node": ^18.15.11
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=11.8.0"
     "@zwave-js/shared": ">=10.22.3"
     typescript: ~4.9.5
     winston: ^3.9.0
     winston-transport: ^4.5.0
   peerDependencies:
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=11.8.0"
     "@zwave-js/shared": ">=10.22.3"
     winston: ^3.7.2
     winston-transport: ^4.5.0
@@ -2075,14 +2075,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zwave-js/log-transport-logfmt@workspace:packages/logfmt"
   dependencies:
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=11.8.0"
     alcalzone-shared: ^4.0.8
     logfmt: ^1.3.2
     typescript: ~4.9.5
     winston: ^3.9.0
     winston-transport: ^4.5.0
   peerDependencies:
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=11.8.0"
     winston: ^3.7.2
     winston-transport: ^4.5.0
   languageName: unknown
@@ -2114,13 +2114,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zwave-js/shared@npm:10.16.0":
-  version: 10.16.0
-  resolution: "@zwave-js/shared@npm:10.16.0"
+"@zwave-js/shared@npm:11.8.0":
+  version: 11.8.0
+  resolution: "@zwave-js/shared@npm:11.8.0"
   dependencies:
     alcalzone-shared: ^4.0.8
     fs-extra: ^10.1.0
-  checksum: 0e21a78a7c2e2fb60f0580b25c26e5af136e47ef2371c6d4d23c0e16ae7b7a90503c4a63eef5c19df0b1f8b413f4a37c9a7cde51ba17e4f6f166c080783011b2
+  checksum: e4950ac37019b7dce2a435b3659aa39b1ba1259ac607d5bc9ab7d583f92708b3118332fe5148ebe209c091573ca0ba984bcf5d98a604845f7cff9acd4e7225f6
   languageName: node
   linkType: hard
 
@@ -3027,10 +3027,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.5":
-  version: 1.11.7
-  resolution: "dayjs@npm:1.11.7"
-  checksum: 5003a7c1dd9ed51385beb658231c3548700b82d3548c0cfbe549d85f2d08e90e972510282b7506941452c58d32136d6362f009c77ca55381a09c704e9f177ebb
+"dayjs@npm:^1.11.7":
+  version: 1.11.9
+  resolution: "dayjs@npm:1.11.9"
+  checksum: a4844d83dc87f921348bb9b1b93af851c51e6f71fa259604809cfe1b49d1230e6b0212dab44d1cb01994c096ad3a77ea1cf18fa55154da6efcc9d3610526ac38
   languageName: node
   linkType: hard
 
@@ -5330,16 +5330,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"logform@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "logform@npm:2.4.2"
+"logform@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "logform@npm:2.5.1"
   dependencies:
     "@colors/colors": 1.5.0
+    "@types/triple-beam": ^1.3.2
     fecha: ^4.2.0
     ms: ^2.1.1
     safe-stable-stringify: ^2.3.1
     triple-beam: ^1.3.0
-  checksum: 3d00f4e1ccaf0a86886aabbf66d1f1d207441d5b408f103457da6d64d055aee76c02af4b40a31ca77a1db4cbcdecb007149f731536c39cbd89b7b6ba3dda6d7b
+  checksum: 08fdf03be5bb69af33bac214eb4f6a0c83ad3821a30de498925fccb61e993e5a4a87470aab356ca2110c11e4643685bed5597ca5f46dd1cd11437c44a0e0e3c2
   languageName: node
   linkType: hard
 
