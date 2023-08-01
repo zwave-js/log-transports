@@ -31,7 +31,7 @@
     "node": ">=14.13.0 <15 || >= 16 <16.9.0 || >16.9.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
+    "@types/node": "^20.4.5",
     "@zwave-js/core": ">=10.16.0",
     "@zwave-js/shared": ">=10.22.3",
     "typescript": "~4.9.5",
