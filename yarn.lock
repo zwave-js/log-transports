@@ -2033,23 +2033,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zwave-js/core@npm:>=10.16.0":
-  version: 10.16.0
-  resolution: "@zwave-js/core@npm:10.16.0"
+"@zwave-js/core@npm:>=12.0.2":
+  version: 12.0.2
+  resolution: "@zwave-js/core@npm:12.0.2"
   dependencies:
     "@alcalzone/jsonl-db": ^3.1.0
-    "@zwave-js/shared": 10.16.0
+    "@zwave-js/shared": 12.0.0
     alcalzone-shared: ^4.0.8
     ansi-colors: ^4.1.3
-    dayjs: ^1.11.5
-    logform: ^2.4.2
+    dayjs: ^1.11.9
+    logform: ^2.5.1
     nrf-intel-hex: ^1.3.0
     reflect-metadata: ^0.1.13
     triple-beam: "*"
-    winston: ^3.8.2
+    winston: ^3.10.0
     winston-daily-rotate-file: ^4.7.1
     winston-transport: ^4.5.0
-  checksum: cdd0e3e4561a20bfbb7e11ba421b7ac32fb91481bce4904d0eca711e02f61bc14225e9b1665e7c381101cfc81fedf53a9aa64087cf0d0c6a298f80938be336fb
+  checksum: 96931f80df2397abb21f39b6201ff2e85be32d2514b6b5b390058b94956fc25c3ee64e31cea0fa1f65d7f064a4d8aff609babcb1a8b1852bbaf90fd02f3ad489
   languageName: node
   linkType: hard
 
@@ -2058,13 +2058,13 @@ __metadata:
   resolution: "@zwave-js/log-transport-json@workspace:packages/json"
   dependencies:
     "@types/node": ^18.15.11
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=12.0.2"
     "@zwave-js/shared": ">=10.22.3"
     typescript: ~4.9.5
     winston: ^3.9.0
     winston-transport: ^4.5.0
   peerDependencies:
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=12.0.2"
     "@zwave-js/shared": ">=10.22.3"
     winston: ^3.7.2
     winston-transport: ^4.5.0
@@ -2075,14 +2075,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zwave-js/log-transport-logfmt@workspace:packages/logfmt"
   dependencies:
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=12.0.2"
     alcalzone-shared: ^4.0.8
     logfmt: ^1.3.2
     typescript: ~4.9.5
     winston: ^3.9.0
     winston-transport: ^4.5.0
   peerDependencies:
-    "@zwave-js/core": ">=10.16.0"
+    "@zwave-js/core": ">=12.0.2"
     winston: ^3.7.2
     winston-transport: ^4.5.0
   languageName: unknown
@@ -2114,13 +2114,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zwave-js/shared@npm:10.16.0":
-  version: 10.16.0
-  resolution: "@zwave-js/shared@npm:10.16.0"
+"@zwave-js/shared@npm:12.0.0":
+  version: 12.0.0
+  resolution: "@zwave-js/shared@npm:12.0.0"
   dependencies:
     alcalzone-shared: ^4.0.8
-    fs-extra: ^10.1.0
-  checksum: 0e21a78a7c2e2fb60f0580b25c26e5af136e47ef2371c6d4d23c0e16ae7b7a90503c4a63eef5c19df0b1f8b413f4a37c9a7cde51ba17e4f6f166c080783011b2
+    fs-extra: ^11.1.1
+  checksum: fae3b2f17b3f64eac4b571dceaeb87d819f10c1646ed9c9d69f39be3a64ab45f34b608718ed790ef02a62df3675ea2b2e34442d471f91377a971f421a03d64a7
   languageName: node
   linkType: hard
 
@@ -3027,10 +3027,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.5":
-  version: 1.11.7
-  resolution: "dayjs@npm:1.11.7"
-  checksum: 5003a7c1dd9ed51385beb658231c3548700b82d3548c0cfbe549d85f2d08e90e972510282b7506941452c58d32136d6362f009c77ca55381a09c704e9f177ebb
+"dayjs@npm:^1.11.9":
+  version: 1.11.10
+  resolution: "dayjs@npm:1.11.10"
+  checksum: a6b5a3813b8884f5cd557e2e6b7fa569f4c5d0c97aca9558e38534af4f2d60daafd3ff8c2000fed3435cfcec9e805bcebd99f90130c6d1c5ef524084ced588c4
   languageName: node
   linkType: hard
 
@@ -3885,6 +3885,17 @@ __metadata:
     jsonfile: ^6.0.1
     universalify: ^2.0.0
   checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^11.1.1":
+  version: 11.1.1
+  resolution: "fs-extra@npm:11.1.1"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: fb883c68245b2d777fbc1f2082c9efb084eaa2bbf9fddaa366130d196c03608eebef7fb490541276429ee1ca99f317e2d73e96f5ca0999eefedf5a624ae1edfd
   languageName: node
   linkType: hard
 
@@ -5330,16 +5341,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"logform@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "logform@npm:2.4.2"
+"logform@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "logform@npm:2.5.1"
   dependencies:
     "@colors/colors": 1.5.0
+    "@types/triple-beam": ^1.3.2
     fecha: ^4.2.0
     ms: ^2.1.1
     safe-stable-stringify: ^2.3.1
     triple-beam: ^1.3.0
-  checksum: 3d00f4e1ccaf0a86886aabbf66d1f1d207441d5b408f103457da6d64d055aee76c02af4b40a31ca77a1db4cbcdecb007149f731536c39cbd89b7b6ba3dda6d7b
+  checksum: 08fdf03be5bb69af33bac214eb4f6a0c83ad3821a30de498925fccb61e993e5a4a87470aab356ca2110c11e4643685bed5597ca5f46dd1cd11437c44a0e0e3c2
   languageName: node
   linkType: hard
 
@@ -7207,9 +7219,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"winston@npm:^3.8.2":
-  version: 3.8.2
-  resolution: "winston@npm:3.8.2"
+"winston@npm:^3.10.0":
+  version: 3.10.0
+  resolution: "winston@npm:3.10.0"
   dependencies:
     "@colors/colors": 1.5.0
     "@dabh/diagnostics": ^2.0.2
@@ -7222,7 +7234,7 @@ __metadata:
     stack-trace: 0.0.x
     triple-beam: ^1.3.0
     winston-transport: ^4.5.0
-  checksum: f7b901798b92ab9e93c850110bf6e98500e9a0e762b62dab410cf928b2a4145533dfa6d3d2b24f7bf0dc94b53808d5bd28aaaeff9a4b43b89ea4c798cce308ea
+  checksum: 47df0361220d12b46d1b3c98a1c380a3718321739d527a182ce7984fc20715e5b0b55db0bcd3fd076d1b1d3261903b890b053851cfd4bc028bda7951fa8ca2e0
   languageName: node
   linkType: hard
 
