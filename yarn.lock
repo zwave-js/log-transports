@@ -1852,10 +1852,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.15.11":
-  version: 18.15.11
-  resolution: "@types/node@npm:18.15.11"
-  checksum: 977b4ad04708897ff0eb049ecf82246d210939c82461922d20f7d2dcfd81bbc661582ba3af28869210f7e8b1934529dcd46bff7d448551400f9d48b9d3bddec3
+"@types/node@npm:^20.8.0":
+  version: 20.8.0
+  resolution: "@types/node@npm:20.8.0"
+  checksum: ebad6342d54238a24bf980d7750117a5d67749c9b72cbb7a974a1e932c39034aa3a810d669e007e8a5071782a253aa069a187b614407a382403c9826e837c849
   languageName: node
   linkType: hard
 
@@ -2057,7 +2057,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zwave-js/log-transport-json@workspace:packages/json"
   dependencies:
-    "@types/node": ^18.15.11
+    "@types/node": ^20.8.0
     "@zwave-js/core": ">=10.16.0"
     "@zwave-js/shared": ">=10.22.3"
     typescript: ~4.9.5
@@ -2097,7 +2097,7 @@ __metadata:
     "@tsconfig/node12": ^1.0.11
     "@types/jest": ^29.2.5
     "@types/logfmt": ^1.2.3
-    "@types/node": ^18.15.11
+    "@types/node": ^20.8.0
     "@types/triple-beam": ^1.3.2
     "@typescript-eslint/eslint-plugin": ^5.59.1
     "@typescript-eslint/parser": ^5.59.1
