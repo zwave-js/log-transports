@@ -35,6 +35,12 @@
    yarn add --dev -W @types/your-dependency
    ```
 
+## Contributing
+
+AI assistance is welcome when you review and understand its output. Autonomous
+agent contributions and unreviewed AI communication are prohibited. Read the
+[AI Policy](AI_POLICY.md) before contributing.
+
 ## Quick Links
 
 -   [License](LICENSE)
