@@ -27,7 +27,7 @@
   "devDependencies": {
     "@alcalzone/release-script": "3.5.9",
     "@alcalzone/release-script-plugin-license": "3.5.9",
-    "@tsconfig/node12": "^1.0.11",
+    "@tsconfig/node14": "^14.1.0",
     "@types/jest": "^29.2.5",
     "@types/logfmt": "^1.2.3",
     "@types/node": "^18.15.11",
