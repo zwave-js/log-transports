@@ -2136,7 +2136,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^4.2.5"
     jest: "npm:^29.3.1"
     prettier: "npm:^2.8.8"
-    prettier-plugin-organize-imports: "npm:^3.2.2"
+    prettier-plugin-organize-imports: "npm:^3.2.4"
     ts-node: "npm:^10.9.1"
     typescript: "npm:~4.9.5"
   languageName: unknown
@@ -6104,9 +6104,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-organize-imports@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "prettier-plugin-organize-imports@npm:3.2.2"
+"prettier-plugin-organize-imports@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "prettier-plugin-organize-imports@npm:3.2.4"
   peerDependencies:
     "@volar/vue-language-plugin-pug": ^1.0.4
     "@volar/vue-typescript": ^1.0.4
@@ -6117,7 +6117,7 @@ __metadata:
       optional: true
     "@volar/vue-typescript":
       optional: true
-  checksum: 10/6f9d208d69df3e7abc5fd383a72ebb83e63d8c618463c9b375947a7ee6933bc3864e853a5e3bca6a14a11ba1a64d9229f73270af330b3e14f9193922816a7bf0
+  checksum: 10/93c98d365af500aa4c72f5330d82c20a20d0e7661a9692e6f26a76a2f4f88b99e0f85dcb8871e98b6d687d6e19ea5f1dcc937f9e29fd0778e888675ecafed233
   languageName: node
   linkType: hard
 
